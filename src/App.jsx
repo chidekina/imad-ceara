@@ -1,8 +1,7 @@
+import Paths from "./Paths";
+
 const App = () => {
-  return (
-    <>
-    </>
-  );
+  return <Paths />;
 }
 
 export default App;
