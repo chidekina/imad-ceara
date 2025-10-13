@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Modista Pro';
+  src: url('./assets/fonts/ModistaProMedium-E4YG9.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Variable Concept';
+  src: url('./assets/fonts/Myriad Variable Concept.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Variable Concept Light';
+  src: url('./assets/fonts/Myriad Variable Concept.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@theme {
+  --color-*: initial;
+
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-institutional: #D66240;
+  --color-education: #395BAA;
+  --color-culture: #498D47;
+
+  --font-family-title: 'Modista Pro', serif;
+  --font-family-subtitle: 'Myriad Variable Concept', sans-serif;
+  --font-family-body: 'Myriad Variable Concept Light', sans-serif;
+}
+
