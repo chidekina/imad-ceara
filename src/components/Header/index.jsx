@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import NavMenu from '../NavMenu';
+
+import { navItems } from "../../db/navItems";
 
 const Header = ({ scrollToSection }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,22 +13,18 @@ const Header = ({ scrollToSection }) => {
         <div className="flex items-center">
           <img src="/logo/logo-full.svg" alt="IMAD" className="h-12 w-auto" />
         </div>
-        
-        <button 
+
+        <button
           className="md:hidden p-2"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
-        <nav className="hidden md:flex items-center space-x-8">
-          <button onClick={() => scrollToSection('sobre')} className="text-gray-800 hover:text-institutional transition font-medium">Sobre</button>
-          <button onClick={() => scrollToSection('pilares')} className="text-gray-800 hover:text-institutional transition font-medium">Pilares</button>
-          <button onClick={() => scrollToSection('diferenciais')} className="text-gray-800 hover:text-institutional transition font-medium">Diferenciais</button>
-          <button onClick={() => scrollToSection('cadastro')} className="bg-black text-white px-6 py-2 hover:bg-gray-800 transition font-medium rounded-lg">
-            Registrar
-          </button>
-        </nav>
+        <NavMenu
+          list={navItems}
+          onclick={scrollToSection}
+        />
       </div>
 
       {menuOpen && (

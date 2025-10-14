@@ -41,7 +41,7 @@ const Registration = () => {
           Faça parte do IMAD
         </h2>
         <p className="text-center text-gray-700 mb-8 text-lg font-body">
-          Cadastre-se e seja um dos pioneiros neste movimento
+          Seja um associado deste movimento
         </p>
 
         {submitted ? (
