@@ -2,7 +2,7 @@ import Banner from "../Banner";
 
 import bgImagem from "/images/enhanced_Modern_minimalist_living_room_with_dark_brown_wood.png"
 
-const Hero = ({ scrollToSection, openRegistrationModal }) => {
+const Hero = ({ openRegistrationModal }) => {
   return (
     <section style={{
       position: 'relative',
