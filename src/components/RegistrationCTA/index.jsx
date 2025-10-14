@@ -4,7 +4,7 @@ const RegistrationCTA = ({ openRegistrationModal }) => {
   return (
     <section 
       id="cadastro" 
-      className="py-16 px-4 relative"
+      className="py-16 px-4 relative mb-50"
       style={{
         backgroundImage: 'url("/images/Professional_artistic_sketch_of_a_luxurious_modern_.png")',
         backgroundAttachment: 'fixed',
