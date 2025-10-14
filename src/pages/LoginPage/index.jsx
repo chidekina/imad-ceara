@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Button from '../../components/Button';
 
 const LoginPage = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
     password: ''
@@ -11,7 +12,14 @@ const LoginPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Dados do login:', formData);
-    // Aqui você implementaria a lógica de autenticação
+    
+    // Simulação de autenticação - em produção seria uma API
+    if (formData.email && formData.password) {
+      // Redirecionar para página de usuário
+      navigate('/usuario');
+    } else {
+      alert('Por favor, preencha todos os campos');
+    }
   };
 
   const handleChange = (e) => {
@@ -26,7 +34,7 @@ const LoginPage = () => {
       <div className="max-w-md w-full">
         <div className="text-center mb-8">
           <Link to="/" className="inline-block">
-            <img src="/logo/logo-main.svg" alt="IMAD" className="h-16 mx-auto mb-4" />
+            <img src="/logo/logo-full.svg" alt="IMAD" className="h-16 mx-auto mb-4" />
           </Link>
           <h1 className="text-3xl font-bold text-gray-900 font-title">Entrar no IMAD</h1>
           <p className="text-gray-600 mt-2 font-body">Acesse sua conta</p>
