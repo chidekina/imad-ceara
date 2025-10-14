@@ -8,7 +8,8 @@ export const navItems = [
         section: "pilares"
     },
     {
-        name: "Registrar",
-        section: "cadastro"
+        name: "Login",
+        section: "login",
+        isRoute: true
     },
 ]
