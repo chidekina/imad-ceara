@@ -12,7 +12,7 @@ const Hero = ({ scrollToSection }) => {
       justifyContent: 'center',
       background: 'linear-gradient(135deg, #1e40af, #374151)'
     }}>
-      <Banner image={bgImagem}/>
+      <Banner image={bgImagem} />
 
       <div style={{
         position: 'absolute',
@@ -24,27 +24,25 @@ const Hero = ({ scrollToSection }) => {
         zIndex: 2
       }}></div>
 
-      {/* Conteúdo */}
       <div style={{
         position: 'relative',
         zIndex: 3,
         textAlign: 'center',
         padding: '0 1rem'
       }}>
-        {/* Logo IMAD */}
-        <div className="mb-8">
+        <div className="mb-4">
           <img src="/logo/logo-white.svg" alt="IMAD" className="h-32 md:h-48 w-auto mx-auto" />
         </div>
 
-        {/* Botão Registrar */}
         <button
           onClick={() => scrollToSection('cadastro')}
-          className="bg-black text-white px-12 py-4 text-xl font-semibold hover:bg-gray-800 transition rounded-lg"
+          className="bg-black text-white px-12 py-4 text-xl font-semibold hover:bg-gray-800 transition rounded-lg hover:scale-110 cursor-pointer"
         >
           Registrar
         </button>
-        <div className="mt-12 text-white">
-          <p className="text-2lg md:text-3xl font-family-title">Seja um associado deste movimento</p>
+        <div className="mt-8 text-white">
+          <p className="text-2lg md:text-3xl font-family-title">Instituto do Movimento</p>
+          <p className="text-2lg md:text-3xl font-family-title">da Arquitetura e do Design</p>
         </div>
       </div>
     </section>
