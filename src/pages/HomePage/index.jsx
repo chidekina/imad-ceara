@@ -1,7 +1,6 @@
 import Hero from '../../components/Hero';
 import About from '../../components/About';
 import Pillars from '../../components/Pillars';
-import Differentials from '../../components/Differentials';
 import Registration from '../../components/Registration';
 
 const HomePage = () => {
@@ -14,7 +13,6 @@ const HomePage = () => {
       <Hero scrollToSection={scrollToSection} />
       <About />
       <Pillars />
-      <Differentials />
       <Registration />
     </>
   );

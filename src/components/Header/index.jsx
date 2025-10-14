@@ -8,7 +8,7 @@ const Header = ({ scrollToSection }) => {
     <header className="fixed top-0 w-full bg-white z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center">
-          <img src="/logo/logo-white.svg" alt="IMAD" className="h-12 w-auto" />
+          <img src="/logo/logo-full.svg" alt="IMAD" className="h-12 w-auto" />
         </div>
         
         <button 
