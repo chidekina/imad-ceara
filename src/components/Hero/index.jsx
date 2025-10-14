@@ -1,4 +1,5 @@
 import Banner from "../Banner";
+import Button from "../Button";
 
 import bgImagem from "/images/enhanced_Modern_minimalist_living_room_with_dark_brown_wood.png"
 
@@ -34,12 +35,14 @@ const Hero = ({ openRegistrationModal }) => {
           <img src="/logo/logo-white.svg" alt="IMAD" className="h-32 md:h-48 w-auto mx-auto" />
         </div>
 
-        <button
+        <Button
           onClick={openRegistrationModal}
-          className="bg-black text-white px-12 py-4 text-xl font-semibold hover:bg-gray-800 transition rounded-lg hover:scale-110 cursor-pointer"
+          variant="secondary"
+          size="xl"
+          rounded
         >
           Registrar
-        </button>
+        </Button>
         <div className="mt-8 text-white">
           <p className="text-2lg md:text-3xl font-family-title">Instituto do Movimento</p>
           <p className="text-2lg md:text-3xl font-family-title">da Arquitetura e Design</p>

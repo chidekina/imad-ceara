@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Button from '../Button';
 
 const NavMenu = ({ list, onclick }) => {
     return (
@@ -6,13 +7,16 @@ const NavMenu = ({ list, onclick }) => {
             {
                 list.map((item, index) => (
                     item.isRoute ? (
-                        <Link 
+                        <Button 
                             key={index}
-                            to={`/${item.section}`} 
-                            className="bg-black text-white px-6 py-3 hover:bg-gray-800 transition rounded-lg font-semibold"
+                            as={Link}
+                            to={`/${item.section}`}
+                            variant="secondary"
+                            size="md"
+                            rounded
                         >
                             {item.name}
-                        </Link>
+                        </Button>
                     ) : (
                         <button 
                             key={index}

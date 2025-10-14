@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import NavMenu from '../NavMenu';
+import Button from '../Button';
 
 import { navItems } from "../../db/navItems";
 
@@ -33,13 +34,17 @@ const Header = ({ scrollToSection }) => {
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             <button onClick={() => { scrollToSection('sobre'); setMenuOpen(false); }} className="text-left text-gray-800 hover:text-institutional transition py-2">Sobre</button>
             <button onClick={() => { scrollToSection('pilares'); setMenuOpen(false); }} className="text-left text-gray-800 hover:text-institutional transition py-2">Pilares</button>
-            <Link 
+            <Button
+              as={Link}
               to="/login" 
               onClick={() => setMenuOpen(false)}
-              className="bg-black text-white px-6 py-3 hover:bg-gray-800 transition rounded-lg text-center"
+              variant="secondary"
+              size="md"
+              rounded
+              fullWidth
             >
               Login
-            </Link>
+            </Button>
           </div>
         </nav>
       )}

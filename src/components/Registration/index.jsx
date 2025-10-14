@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Check } from 'lucide-react';
+import Button from '../Button';
 
 const Registration = () => {
   const [formData, setFormData] = useState({
@@ -114,12 +115,14 @@ const Registration = () => {
               </select>
             </div>
 
-            <button
+            <Button
               type="submit"
-              className="w-full bg-institutional text-white py-4 font-semibold text-lg hover:bg-institutional/90 transition border-2 border-institutional hover:border-institutional/90"
+              variant="primary"
+              size="lg"
+              fullWidth
             >
               REGISTRAR
-            </button>
+            </Button>
           </form>
         </div>
       )}
