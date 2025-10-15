@@ -45,7 +45,7 @@ const Hero = ({ openRegistrationModal }) => {
         </Button>
         <div className="mt-8 text-white">
           <p className="text-2lg md:text-3xl font-family-title">Instituto do Movimento</p>
-          <p className="text-2lg md:text-3xl font-family-title">da Arquitetura e Design</p>
+          <p className="text-2lg md:text-3xl font-family-title">de Arquitetura e Design</p>
         </div>
       </div>
     </section>
